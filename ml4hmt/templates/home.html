@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section id="about" style="padding-top: 60px;">
+  {% if message %}
+  <div class="alert-message success">
+    <p>{{message|safe}}</p>
+  </div>
+  {% else %}
+  <div class="alert-message warning">
+    <p><strong>Please note:</strong> If interested in the workshop, please click &raquo;<em>I'd like to participate</em>&laquo; to let us know. Thanks!</p>
+  </div>
+  {% endif %}
+
+  <div class="page-header">
+    <h1>Shared Task on Applying Machine Learning techniques to<br/>optimising the division of labour in Hybrid MT (ML4HMT-2011)</h1>
+    <h2>Barcelona (Spain) &middot; Saturday, November 19th, 2011</h2>
+    <h4>In conjunction with <a href="http://ixa2.si.ehu.es/lihmt2011/">International Workshop on Using Linguistic Information for Hybrid Machine Translation (LIHMT-2011)</a></h4>
+
+  </div>
+</section>
+
+<section id="index">
+  <div class="row">
+    <div class="span8">
+      <h4>Workshop Purpose and Theme</h4>
+      <p>The workshop will explore alternatives in order to provide optimal support for Hybrid MT design, using sophisticated machine-learning techniques. One further important objective of the workshop is to build bridges from MT to the ML community to systematically and jointly explore the choice space for Hybrid MT.</p>
+
+      <h4>Development Data for Download</h4>
+      <p>The participants are given <a href="http://www.dfki.de/~cfedermann/ML4HMT-data-1.0.tgz">a development bilingual set</a> (13 MB), aligned at a sentence level. We have also released a <a href="http://www.dfki.de/~cfedermann/ML4HMT-data-description.pdf">description document</a> (104 KB).</p>
+    </div>
+
+    <div class="span7 push1">
+      <h4>Important Dates</h4>
+      <ul>
+	    <li><strong>May 20th</strong> Release of data for the challenge</li>
+	    <li><strong>October 10th</strong> Paper Submissions due / Challenge results due</li>
+	    <li><strong>October 18th</strong> Author notification / Release of challenge results</li>
+	    <li><strong>October 25th</strong> Final version due</li>
+	    <li><strong>November 19th</strong> Workshop</li>
+	  </ul>
+
+	  <h4>Acknowledgments</h4>
+	  <p>The ML4HMT workshop is supported by <a href="http://www.meta-net.eu/"><img style="width:100px;vertical-align:bottom;" src="http://www.meta-share.eu/meta-net-logo.png" /></a></p>
+	
+	    </div>
+	  </div>
+	</section>
+
+{% endblock %}
