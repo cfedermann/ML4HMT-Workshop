@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section id="about" style="padding-top: 60px;">
+  <div class="page-header">
+    <h1>Shared Task on Applying Machine Learning techniques to<br/>optimising the division of labour in Hybrid MT (ML4HMT-2011)</h1>
+    <h2>Barcelona (Spain) &middot; Saturday, November 19th, 2011</h2>
+    <h4>In conjunction with <a href="http://ixa2.si.ehu.es/lihmt2011/">International Workshop on Using Linguistic Information for Hybrid Machine Translation (LIHMT-2011)</a></h4>
+
+  </div>
+</section>
+
+<section id="index">
+  <div class="row">
+    <div class="span15">
+      <h4>Registered Participants</h4>
+      <table class="zebra-striped">
+        <tr><th>Name</th><th>Email</th><th>Affiliation</th></tr>
+      {% for participant in participants %}
+        <tr><td>{{participant.name}}</td><td>{{participant.email}}</td><td> {{participant.affiliation}}</td></tr>
+      {% endfor %}
+      </table>
+    </div>
+  </div>
+</section>
+{% endblock %}
