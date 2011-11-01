@@ -5,14 +5,19 @@ from django.conf.urls.defaults import patterns, include, url
 from django.contrib import admin
 admin.autodiscover()
 
-urlpatterns = patterns('',
-  url(r'^$', 'ml4hmt.views.home', name='home'),
-  url(r'^(?P<page_id>call-for-papers)/$', 'ml4hmt.views.page', name='page'),
-  url(r'^(?P<page_id>program)/$', 'ml4hmt.views.page', name='page'),
+URL_PREFIX = 'ml4hmt/'
 
-  ###url(r'^signup/$', 'ml4hmt.views.signup', name='signup'),
-  ###url(r'^thank-you/$', 'ml4hmt.views.thank_you', name="thank-you"),
-  
-  # Uncomment the next line to enable the admin:
-  url(r'^admin/', include(admin.site.urls)),
+urlpatterns = patterns('',
+  url(r'^{0}$'.format(URL_PREFIX),
+    'ml4hmt.views.home', name='home'),
+  url(r'^{0}(?P<page_id>call-for-papers)/$'.format(URL_PREFIX),
+    'ml4hmt.views.page', name='call-for-papers'),
+  url(r'^{0}(?P<page_id>program)/$'.format(URL_PREFIX),
+    'ml4hmt.views.page', name='program'),
+  url(r'^{0}signup/$'.format(URL_PREFIX),
+    'ml4hmt.views.signup', name='signup'),
+  url(r'^{0}thank-you/$'.format(URL_PREFIX),
+    'ml4hmt.views.thank_you', name="thank-you"),
+  url(r'^{0}admin/'.format(URL_PREFIX),
+    include(admin.site.urls)),
 )
