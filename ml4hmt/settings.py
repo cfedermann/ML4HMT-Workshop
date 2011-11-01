@@ -8,6 +8,10 @@ TEMPLATE_DEBUG = DEBUG
 
 ROOT_PATH = getcwd()
 
+URL_PREFIX = '/ml4hmt'
+if DEBUG:
+    URL_PREFIX = ''
+
 ADMINS = (
     ('Christian Federmann', 'cfedermann@dfki.de'),
 )
