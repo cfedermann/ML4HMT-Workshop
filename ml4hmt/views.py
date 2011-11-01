@@ -42,3 +42,9 @@ def thank_you(request):
     context = {'message': 'Thanks for participating in the ML4HMT ' \
       'workshop. See you soon!', 'URL_PREFIX': URL_PREFIX}
     return render_to_response('home.html', context) 
+
+def participants(request):
+    """Renders a list of participants for the workshop."""
+    participants = Participant.objects.all()
+    context = {'participants': participants, 'URL_PREFIX': URL_PREFIX}
+    return render_to_response('participants/participants.html', context)
