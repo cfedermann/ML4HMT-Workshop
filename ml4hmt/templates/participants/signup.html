@@ -21,7 +21,7 @@
   </div>
 {% endif %}
 
-  <form action="{% url signup %}" method="post">{% csrf_token %}
+  <form action="{{URL_PREFIX}}{% url signup %}" method="post">{% csrf_token %}
   <fieldset>
     <div class="clearfix">
       <label for="id_name">Name</label>
