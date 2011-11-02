@@ -16,48 +16,49 @@
     <div class="span15">
 
 {% if form.errors %}
-  <div class="alert-message error">
-    <p><strong>Please note:</strong> You need to submit at least your name and email address; thank you!</p>
-  </div>
+      <div class="alert-message error">
+        <p><strong>Please note:</strong> You need to submit at least your name and email address; thank you!</p>
+      </div>
 {% endif %}
 
-  <form action="{{URL_PREFIX}}{% url signup %}" method="post">{% csrf_token %}
-  <fieldset>
-    <div class="clearfix">
-      <label for="id_name">Name</label>
-      <div class="input">
-        <div class="input-prepend">
-          <span class="add-on">required</span>
-          <input class="xlarge" id="id_email" type="text" name="name" maxlength="75" />
-          <span class="help-inline">Your name</span>
+      <form action="{{URL_PREFIX}}{% url signup %}" method="post">{% csrf_token %}
+      <fieldset>
+        <div class="clearfix">
+          <label for="id_name">Name</label>
+          <div class="input">
+            <div class="input-prepend">
+              <span class="add-on">required</span>
+              <input class="xlarge" id="id_name" type="text" name="name" maxlength="75" />
+              <span class="help-inline">Your name</span>
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
-    <div class="clearfix">
-      <label for="id_email">Email</label>
-      <div class="input">
-        <div class="input-prepend">
-          <span class="add-on">required</span>
-          <input class="xlarge" id="id_email" type="text" name="email" maxlength="75" />
-          <span class="help-inline">An email address we can use to contact you</span>
+        <div class="clearfix">
+          <label for="id_email">Email</label>
+          <div class="input">
+            <div class="input-prepend">
+              <span class="add-on">required</span>
+              <input class="xlarge" id="id_email" type="text" name="email" maxlength="75" />
+              <span class="help-inline">An email address we can use to contact you</span>
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
-    <div class="clearfix">
-      <label for="id_affiliation">Affiliation</label>
-      <div class="input">
-        <div class="input-prepend">
-          <span class="add-on">optional</span>
-          <input class="xlarge" id="id_affiliation" type="text" name="affiliation" maxlength="75" />
-          <span class="help-inline">Your affiliation (optional)</span>
+        <div class="clearfix">
+          <label for="id_affiliation">Affiliation</label>
+          <div class="input">
+            <div class="input-prepend">
+              <span class="add-on">optional</span>
+              <input class="xlarge" id="id_affiliation" type="text" name="affiliation" maxlength="75" />
+              <span class="help-inline">Your affiliation (optional)</span>
+            </div>
+          </div>
         </div>
-      </div>
+        <div class="actions">
+          <input class="btn primary" type="submit" value="Submit" />
+        </div>
+      </fieldset>
+      </form>
     </div>
-    <div class="actions">
-      <input class="btn primary" type="submit" value="Submit" />
-    </div>
-  </fieldset>
-  </form>
   </div>
 </section>
 {% endblock %}
