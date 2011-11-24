@@ -6,6 +6,8 @@ from django.contrib import admin
 admin.autodiscover()
 
 urlpatterns = patterns('',
+  url(r'^robots.txt$',
+    'ml4hmt.views.robots', name='robots'),
   url(r'^$',
     'ml4hmt.views.home', name='home'),
   url(r'^(?P<page_id>call-for-papers)/$',
