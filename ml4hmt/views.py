@@ -15,7 +15,7 @@ def robots(request):
     
     # The following URLs should NOT be crawled by bots, so we disallow access!
     for url in ('signup', 'thank-you', 'participants', 'admin'):
-        robots.append('Disallow: /{0}/'.format(url))
+        robots.append('Disallow: {0}/{1}/'.format(URL_PREFIX, url))
     
     return HttpResponse('\n'.join(robots), mimetype='text/plain')
 
