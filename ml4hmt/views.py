@@ -2,14 +2,25 @@
 # Author: Christian Federmann <cfedermann@dfki.de>
 
 from django.core.urlresolvers import reverse
-from django.http import HttpResponseRedirect
+from django.http import HttpResponse, HttpResponseRedirect
 from django.shortcuts import render_to_response
 from django.template import RequestContext
 from ml4hmt.workshop.forms import ParticipantForm
 from ml4hmt.workshop.models import Participant
 from ml4hmt.settings import URL_PREFIX
 
+def robots(request):
+    """Disallows robot access to some pages."""
+    robots = ['User-agent: *']
+    
+    # The following URLs should NOT be crawled by bots, so we disallow access!
+    for url in ('signup', 'thank-you', 'participants', 'admin'):
+        robots.append('Disallow: /{0}/'.format(url))
+    
+    return HttpResponse('\n'.join(robots), mimetype='text/plain')
+
 def home(request):
+    """Renders the home page for the workshop."""
     context = {'URL_PREFIX': URL_PREFIX}
     return render_to_response('home.html', context)
 
