@@ -10,12 +10,16 @@ urlpatterns = patterns('',
     'ml4hmt.views.robots', name='robots'),
   url(r'^$',
     'ml4hmt.views.home', name='home'),
-  url(r'^(?P<page_id>call-for-papers)/$',
-    'ml4hmt.views.page', name='call-for-papers'),
-  url(r'^(?P<page_id>program)/$',
-    'ml4hmt.views.page', name='program'),
+
+## cfedermann: temporarily disabled until ML4HMT-12 data is prepared.
+##
+##  url(r'^(?P<page_id>call-for-papers)/$',
+##    'ml4hmt.views.page', name='call-for-papers'),
+##  url(r'^(?P<page_id>program)/$',
+##    'ml4hmt.views.page', name='program'),
   url(r'^(?P<page_id>meta-wp2)/$',
     'ml4hmt.views.page', name='meta-wp2'),
+
   # cfedermann: removed registration as workshop is over :)
   #  url(r'^signup/$',
   #    'ml4hmt.views.signup', name='signup'),
