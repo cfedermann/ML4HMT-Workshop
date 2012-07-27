@@ -1,4 +1,4 @@
-# Title:  Django project for the ML4HMT 2011 workshop website
+# Title:  Django project for the ML4HMT 2012 workshop website
 # Author: Christian Federmann <cfedermann@dfki.de>
 
 from django.db import models
