@@ -11,13 +11,13 @@ from ml4hmt.settings import URL_PREFIX
 
 def robots(request):
     """Disallows robot access to some pages."""
-    robots = ['User-agent: *']
+    _robots = ['User-agent: *']
     
     # The following URLs should NOT be crawled by bots, so we disallow access!
     for url in ('signup', 'thank-you', 'participants', 'admin'):
-        robots.append('Disallow: {0}/{1}/'.format(URL_PREFIX, url))
+        _robots.append('Disallow: {0}/{1}/'.format(URL_PREFIX, url))
     
-    return HttpResponse('\n'.join(robots), mimetype='text/plain')
+    return HttpResponse('\n'.join(_robots), mimetype='text/plain')
 
 def home(request):
     """Renders the home page for the workshop."""
@@ -39,7 +39,7 @@ def signup(request):
               email=cleaned_data['email'],
               affiliation=cleaned_data['affiliation'])
             new_participant.save()
-            uuid = new_participant.uuid
+            _uuid = new_participant.uuid
             return HttpResponseRedirect(reverse('thank-you'))
     
     else:
@@ -56,6 +56,6 @@ def thank_you(request):
 
 def participants(request):
     """Renders a list of participants for the workshop."""
-    participants = Participant.objects.all()
-    context = {'participants': participants, 'URL_PREFIX': URL_PREFIX}
+    _participants = Participant.objects.all()
+    context = {'participants': _participants, 'URL_PREFIX': URL_PREFIX}
     return render_to_response('participants/participants.html', context)

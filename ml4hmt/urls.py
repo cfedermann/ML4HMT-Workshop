@@ -1,7 +1,7 @@
 # Title:  Django project for the ML4HMT 2011 workshop website
 # Author: Christian Federmann <cfedermann@dfki.de>
 
-from django.conf.urls.defaults import patterns, include, url
+from django.conf.urls.defaults import patterns, url
 from django.contrib import admin
 admin.autodiscover()
 
