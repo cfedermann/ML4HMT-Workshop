@@ -6,8 +6,7 @@ from django.contrib import admin
 admin.autodiscover()
 
 urlpatterns = patterns('',
-  url(r'^robots.txt$',
-    'ml4hmt.views.robots', name='robots'),
+  # Basic home page describing the ML4HMT workshops and shared tasks.
   url(r'^$',
     'ml4hmt.views.home', name='home'),
 
@@ -17,6 +16,8 @@ urlpatterns = patterns('',
 ##    'ml4hmt.views.page', name='call-for-papers'),
 ##  url(r'^(?P<page_id>program)/$',
 ##    'ml4hmt.views.page', name='program'),
+
+  # Information about META Work Package 2.
   url(r'^(?P<page_id>meta-wp2)/$',
     'ml4hmt.views.page', name='meta-wp2'),
 
@@ -29,4 +30,14 @@ urlpatterns = patterns('',
   #    'ml4hmt.views.participants', name='participants'),
   #url(r'^admin/',
   #  include(admin.site.urls)),
+
+  # Archived pages for the ML4HMT-11 workshop.
+  url(r'^(?P<page_id>2011/call-for-papers)/$',
+    'ml4hmt.views.page', name='call-for-papers-2011'),
+  url(r'^(?P<page_id>2011/program)/$',
+    'ml4hmt.views.page', name='program-2011'),
+
+  # Prevent robots from indexing the website.
+  url(r'^robots.txt$',
+    'ml4hmt.views.robots', name='robots'),
 )
