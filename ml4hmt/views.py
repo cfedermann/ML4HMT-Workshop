@@ -1,10 +1,12 @@
 # Title:  Django project for the ML4HMT 2011 workshop website
 # Author: Christian Federmann <cfedermann@dfki.de>
 
+from os.path import basename
 from django.core.urlresolvers import reverse
 from django.http import HttpResponse, HttpResponseRedirect
 from django.shortcuts import render_to_response
 from django.template import RequestContext
+from django.template.loader import render_to_string
 from ml4hmt.workshop.forms import ParticipantForm
 from ml4hmt.workshop.models import Participant
 from ml4hmt.settings import URL_PREFIX
@@ -28,6 +30,13 @@ def page(request, page_id):
     """Renders a page for the workshop."""
     context = {'URL_PREFIX': URL_PREFIX}
     return render_to_response('{0}.html'.format(page_id), context)
+
+def markup_page(request, page_id):
+    """Renders a page containing Markdown markup for the workshop."""
+    markup = render_to_string('{0}.markdown'.format(page_id), {})
+    title = basename(page_id).capitalize()
+    context = {'URL_PREFIX': URL_PREFIX, 'markup': markup, 'title': title}
+    return render_to_response('markdown.html', context)
 
 def signup(request):
     """Creates a signup form for interested participants."""
