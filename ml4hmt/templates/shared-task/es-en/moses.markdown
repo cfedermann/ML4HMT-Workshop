@@ -23,7 +23,7 @@ This package contains the following files:
      The contents of these annotation files are created by the translation
      details option by [Moses](http://www.statmt.org) (Koehn et al., 2007).
 
-        `moses -f moses.ini -T 20000.s3.en.annotation.0 < (src file) > 20000.s3.en`
+        moses -f moses.ini -T 20000.s3.en.annotation.0 < (src file) > 20000.s3.en
 
      These annotations contain information about word alignment, future cost
      estimation, translation scores, etc.
