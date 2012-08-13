@@ -98,4 +98,4 @@ This package contains the following files:
 References
 ----------
 
-[1] Alonso, Juan A., Thurmair, Gregor.: __The Comprendium Translator System.__ In _Proceedings of the Ninth Machine Translation Summit_ (2003).
+[1] Alonso, Juan A. and Gregor Thurmair.: __The Comprendium Translator System.__ In _Proceedings of the Ninth Machine Translation Summit_ (2003).

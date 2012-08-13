@@ -50,4 +50,4 @@ Sample Annotation
 References
 ----------
 
-[1] Ramirez-Sanchez, G., Sanchez-Martinez, F., Ortiz-Rojas, S., Perez-Ortiz, J. A., Forcada, M. L.: __Opentrad Apertium open-source machine translation system: an opportunity for business and research.__ In _Proceedings of the Twenty-Eighth International Conference on Translating and the Computer_ (2006).
+[1] Ramirez-Sanchez, G. and F. Sanchez-Martinez and S. Ortiz-Rojas and J. A. Perez-Ortiz and M. L. Forcada: __Opentrad Apertium open-source machine translation system: an opportunity for business and research.__ In _Proceedings of the Twenty-Eighth International Conference on Translating and the Computer_ (2006).

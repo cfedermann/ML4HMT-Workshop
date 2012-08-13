@@ -17,6 +17,8 @@ urlpatterns = patterns('',
     'ml4hmt.views.markup_page', name='shared-task-es-en-apertium'),
   url(r'^(?P<page_id>shared-task/es-en/lucy)/$',
     'ml4hmt.views.markup_page', name='shared-task-es-en-lucy'),
+  url(r'^(?P<page_id>shared-task/es-en/moses)/$',
+    'ml4hmt.views.markup_page', name='shared-task-es-en-moses'),
 
   # Information about META Work Package 2.
   url(r'^(?P<page_id>meta-wp2)/$',
