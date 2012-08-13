@@ -10,14 +10,14 @@ Package contents
 
 This package contains the following files:
 
-   20000 20Kannotated.es
-   20000 20Kannotated.lucy.en
-   20000 20Kannotated.lucy.en.annotation.0
- 2031614 20Kannotated.lucy.en.annotation.1
-    3003 newstest2011.es
-    3003 newstest2011.lucy.en
-    3003 newstest2011.lucy.en.annotation.0
-  280046 newstest2011.lucy.en.annotation.1
+      20000 20Kannotated.es
+      20000 20Kannotated.lucy.en
+      20000 20Kannotated.lucy.en.annotation.0
+    2031614 20Kannotated.lucy.en.annotation.1
+       3003 newstest2011.es
+       3003 newstest2011.lucy.en
+       3003 newstest2011.lucy.en.annotation.0
+     280046 newstest2011.lucy.en.annotation.1
 
 1. "Raw" translation output
 

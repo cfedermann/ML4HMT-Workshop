@@ -12,11 +12,11 @@ Package contents
 
 This package contains the following files:
 
-   20000 20000.s3.en
-         20000.s3.en.annotation.0
-         20000.s3.en.annotation.1
-    3003 newstest2011.s3.en
-         newstest2011.s3.en.annotation
+    20000 20000.s3.en
+          20000.s3.en.annotation.0
+          20000.s3.en.annotation.1
+     3003 newstest2011.s3.en
+          newstest2011.s3.en.annotation
 
 1. Annotation scheme
 
