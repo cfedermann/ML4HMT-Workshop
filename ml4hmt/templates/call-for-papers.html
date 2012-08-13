@@ -53,9 +53,9 @@
       <p>The ML4HMT-12 Shared Task involves (ES-EN) and (ZH-EN) data sets, in each case translating into EN.</p>
 
       <ul>
-        <li><strong>(ES-EN):</strong> Participants are given a development bilingual set aligned at a sentence level. Each "bilingual sentence" contains: 1) the source sentence, 2) the target (reference) sentence and 3) the corresponding multiple output translations from five systems, based on different MT approaches (Apertium, Ramirez-Sanchez, 2006; Joshua, Zhifei Li et al, 2009; Lucy, Alonso and Thurmair, 2003; Moses, Koehn et. al., 2007). The output has been annotated with system-internal meta-data information derived from the translation process of each of the systems.</li>
+        <li><strong>(ES-EN):</strong> Participants are given a development bilingual set aligned at a sentence level. Each "bilingual sentence" contains: 1) the source sentence, 2) the target (reference) sentence and 3) the corresponding multiple output translations from five systems, based on different MT approaches (<a href="{{URL_PREFIX}}{% url ml4hmt.views.markup_page page_id="shared-task/es-en/apertium"%}">Apertium, Ramirez-Sanchez, 2006</a>; <a href="{{URL_PREFIX}}{% url ml4hmt.views.markup_page page_id="shared-task/es-en/lucy"%}">Lucy, Alonso and Thurmair, 2003</a>; <a href="{{URL_PREFIX}}{% url ml4hmt.views.markup_page page_id="shared-task/es-en/moses"%}">Moses, Koehn et. al., 2007</a>). The output has been annotated with system-internal meta-data information derived from the translation process of each of the systems.</li>
 
-        <li><strong>(ZH-EN):</strong> A corresponding data set for ZH-EN with output translations from three systems (Moses, Joshua and Huajian RBMT) will be provided.</li>
+        <li><strong>(ZH-EN):</strong> A corresponding data set for ZH-EN with output translations from three systems (Phrase-based Moses, hierarchical Moses  and <a href="{{URL_PREFIX}}{% url ml4hmt.views.markup_page page_id="shared-task/zh-en/huajian"%}">Huajian RBMT</a>) will be provided.</li>
       </ul>
 
       <p>Baselines are given by state-of-the-art open-source system-combination systems: MANY (Barrault, 2010) and CMU-MEMT (Heafield and Lavie, 2010).</p>
