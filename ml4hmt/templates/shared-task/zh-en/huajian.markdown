@@ -9,12 +9,15 @@ Package contents
 
 This package contains the following files:
 
-    7497 nist1.huajian.en
-    7497 nist1.huajian.en.annotation.0
-    7497 nist1.zh
-    2276 nist2.huajian.en
-    2276 nist2.huajian.en.annotation.0
-    2276 nist2.zh
+    1357 testData.huajian.en
+    1357 testData.huajian.en.annotation.0
+    1357 testData.zh
+    4476 tuningData1.huajian.en
+    4476 tuningData1.huajian.en.annotation.0
+    4476 tuningData1.zh
+    2276 tuningData2.huajian.en
+    2276 tuningData2.huajian.en.annotation.0
+    2276 tuningData2.zh
 
 1. "Raw" translation output
 
