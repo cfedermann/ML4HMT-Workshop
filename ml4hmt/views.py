@@ -31,7 +31,7 @@ def page(request, page_id):
     context = {'URL_PREFIX': URL_PREFIX}
     if page_id == 'call-for-papers':
         from datetime import date
-        context.update('gogogo': date.today() > date(2012, 8, 22))
+        context.update({'gogogo': date.today() > date(2012, 8, 22)})
     return render_to_response('{0}.html'.format(page_id), context)
 
 def markup_page(request, page_id):
