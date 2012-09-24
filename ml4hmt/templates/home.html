@@ -3,25 +3,25 @@
 {% block content %}
 <section id="about" style="padding-top: 60px;">
   {% if message %}
-  <div class="alert-message success">
+  <div class="alert alert-success">
     <p>{{message|safe}}</p>
   </div>
   {% else %}
-  <div class="alert-message success">
-    <p><strong>ML4HMT-12 Workshop Update:</strong> Submission deadlines extended; research papers: Oct 12th, shared task: Oct 14th&mdash;see <a href="{{URL_PREFIX}}{% url home %}call-for-papers/">call for papers</a> page.</p>
+  <div class="alert alert-info">
+    <strong>ML4HMT-12 Workshop Update:</strong> Deadlines extended; research papers: Oct 12th, shared task: Oct 14th&mdash;see <a href="{{URL_PREFIX}}{% url home %}call-for-papers/">call for papers</a> page.
   </div>
   {% endif %}
 
   <div class="page-header">
-    <h1>Second Workshop on Applying Machine Learning Techniques to Optimise the Division of Labour in Hybrid MT (ML4HMT-12)</h1>
-    <h2>Mumbai (India) &middot; December 9th, 2012</h2>
-    <h4>In conjunction with <a href="http://www.coling2012-iitb.org/">24th International Conference on Computational Linguistics (COLING 2012)</a></h4>
+    <h2>Second Workshop on Applying Machine Learning Techniques to Optimise the Division of Labour in Hybrid MT (ML4HMT-12)</h2>
+    <h3>Mumbai (India) &middot; December 9th, 2012</h3>
+    <h5>In conjunction with <a href="http://www.coling2012-iitb.org/">24th International Conference on Computational Linguistics (COLING 2012)</a></h5>
   </div>
 </section>
 
 <section id="index">
   <div class="row">
-    <div class="span16">
+    <div class="span12">
       <h4>Workshop Purpose and Theme</h4>
       <p>The "Second Workshop on Applying Machine Learning Techniques to Optimise the Division of Labour in Hybrid MT (ML4HMT-12)” is an effort to trigger a systematic investigation on improving state-of-the-art hybrid machine translation, making use of advanced machine-learning (ML) methodologies.</p>
 
@@ -44,7 +44,7 @@
   <hr/>
 
   <div class="row">
-    <div class="span8">
+    <div class="span6">
       <h4>Regular Papers ML4HMT-12</h4>
       <p>We are soliciting original papers on hybrid MT, including (but not limited to):</p>
 
@@ -63,12 +63,9 @@
       </ul>
 
       <p>Full papers should be anonymous and follow the <a href="http://www.coling2012-iitb.org/call_for_papers.php">COLING full paper format</a>.</p>
-
-      <h4>Shared Task ML4HMT-12</h4>
-      <p>Participants are invited to build hybrid machine translation systems and/or system combinations by using the output of several MT systems of different types, as provided by the organisers (<a href="{{URL_PREFIX}}{% url home %}call-for-papers/#data">updated ML4HMT corpus</a>).</p>
     </div>
 
-    <div class="span7 push1">
+    <div class="span6">
       <h4>Important Dates 2012</h4>
       <ul>
         <li class="overdue"><strong>August 15th</strong> Shared Task training data release</li>
@@ -87,7 +84,16 @@
 
         <li><strong>December 9th</strong> COLING 2012 Pre-conference workshop, 9am</li>
       </ul>
+    </div>
+  </div>
 
+  <div class="row">
+    <div class="span6">
+      <h4>Shared Task ML4HMT-12</h4>
+      <p>Participants are invited to build hybrid machine translation systems and/or system combinations by using the output of several MT systems of different types, as provided by the organisers (<a href="{{URL_PREFIX}}{% url home %}call-for-papers/#data">ML4HMT corpus</a>).</p>
+    </div>
+
+    <div class="span6">
       <h4>Acknowledgments</h4>
       <p>The ML4HMT workshop is supported by <a href="http://www.meta-net.eu/"><img  alt="META-NET" src="http://www.meta-share.eu/meta-net-logo.png" style="width:100px;vertical-align:bottom;" /></a>.</p>
     </div>
@@ -96,12 +102,12 @@
   <hr/>
 
   <div class="row">
-    <div class="span8">
+    <div class="span6">
       <h4>ML4HMT-11 Workshop</h4>
       <p>The precursor workshop ML4HMT-11 was held on November 19th, 2011 in Barcelona, Spain. The original call for papers <a href="{{URL_PREFIX}}{% url ml4hmt.views.page page_id="2011/call-for-papers" %}">is available here</a>, the workshop program&mdash;including papers and presentations&mdash;<a href="{{URL_PREFIX}}{% url ml4hmt.views.page page_id="2011/program" %}">can be found here</a>.</p>
     </div>
 
-    <div class="span7 push1">
+    <div class="span6">
       <h4>About META Work Package 2</h4>
       <p>An overview on T4ME WP2 &raquo;<em>Optimising the Division of Labour in Hybrid MT</em>&laquo;, funded by DG INFSO through the Seventh Framework Programme, grant agreement no.: 249119, is <a href="{{URL_PREFIX}}{% url home %}meta-wp2/">available here</a>.</p>
     </div>
