@@ -8,7 +8,7 @@
   </div>
   {% else %}
   <div class="alert-message success">
-    <p><strong>ML4HMT-12 Workshop Update:</strong> Shared Task data now available from the <a href="{{URL_PREFIX}}{% url home %}call-for-papers/">call for papers</a> page.</p>
+    <p><strong>ML4HMT-12 Workshop Update:</strong> Submission deadlines extended; research papers: Oct 12th, shared task: Oct 14th&mdash;see <a href="{{URL_PREFIX}}{% url home %}call-for-papers/">call for papers</a> page.</p>
   </div>
   {% endif %}
 
@@ -28,6 +28,16 @@
       <p>It follows the <a href="{{URL_PREFIX}}{% url ml4hmt.views.page page_id="2011/program" %}">ML4HMT-11</a> workshop, which took place in November 2011 in Barcelona. The first workshop also road-tested a shared task (and associated data set) and laid the basis for a broader reach in 2012.</p>
 
       <p>ML4HMT-12 involves regular papers on hybrid MT as well as a Shared Task. More information is available in the <a href="{{URL_PREFIX}}{% url home %}call-for-papers/">call for papers</a>.</p>
+
+      <h4>Submission Details</h4>
+      <p>Shared task results should be submitted via email attachment. Please compress your results as <span class="label">.zip</span> or <span class="label">.gz</span> archive and send them to <a href="mailto:cfedermann@dfki.de">cfedermann@dfki.de</a>. Use <code>ML4HMT-12 Shared Task Submission</code> as mail subject. Shared task results are due by <span class="label label-warning">extended</span> <strong>October 12th</strong>.</p>
+
+      <p>Results from the automatic evaluation of submitted shared task results will be made available to participants on <span class="label label-warning">extended</span> <strong>October 13th</strong> so that they could be referred to in system description papers. As the manual evaluation will take longer, its results will be presented and published at the workshop.</p>
+
+      <p>Paper submission is possible via the workshop's <a href="https://www.softconf.com/coling2012/ML4HMT12/">submission tool</a>. Papers need to be written in English and can either be 1) research papers, or 2) shared task system description papers. Please indicate the type of your submission by choosing the correct "Submission Type". Note that research papers need to be properly anonymised; system description papers may include author information. Paper submission deadline for both paper types is <span class="label label-warning">extended</span> <strong>October 14th</strong>.</p>
+
+      <h4>Workshop Participation</h4>
+      <p>If you are interested in our workshop and intend to participate, we'd  much appreciate if you could inform us about your participation intent beforehand so that we can better plan the workshop; to do so, send an email to <a href="mailto:cfedermann@dfki.de">cfedermann@dfki.de</a>. Participation is required for at least one author of any accepted workshop paper. It is optional for participants of the shared task&mdash;there will be a time slot reserved for slides from participants who cannot make it to Mumbai (if any), presented by the workshop organisers.</p>
     </div>
   </div>
 
@@ -55,27 +65,27 @@
       <p>Full papers should be anonymous and follow the <a href="http://www.coling2012-iitb.org/call_for_papers.php">COLING full paper format</a>.</p>
 
       <h4>Shared Task ML4HMT-12</h4>
-      <p>Participants are invited to build hybrid machine translation systems and/or system combinations by using the output of several MT systems of different types, as provided by the organisers (updated ML4HMT corpus).</p>
+      <p>Participants are invited to build hybrid machine translation systems and/or system combinations by using the output of several MT systems of different types, as provided by the organisers (<a href="{{URL_PREFIX}}{% url home %}call-for-papers/#data">updated ML4HMT corpus</a>).</p>
     </div>
 
     <div class="span7 push1">
       <h4>Important Dates 2012</h4>
       <ul>
-        <li><strong>August 15th</strong> Shared Task training data release</li>
+        <li class="overdue"><strong>August 15th</strong> Shared Task training data release</li>
 
-        <li><strong>August 23rd</strong> Shared Task test data release</li>
+        <li class="overdue"><strong>August 23rd</strong> Shared Task test data release</li>
 
-        <li><strong>September 15th</strong> Shared Task translation results submission deadline</li>
+        <li><span class="label label-warning">extended</span> <strong>October 12th</strong> Shared Task translation results submission deadline</li>
 
-        <li><strong>September 21st</strong> Shared Task evaluation results release</li>
+        <li><span class="label label-warning">extended</span> <strong>October 13th</strong> Shared Task automatic evaluation results release</li>
 
-        <li><strong>September 30th</strong> Workshop full paper and Shared Task system description paper submission deadline</li>
+        <li><span class="label label-warning">extended</span> <strong>October 14th</strong> Workshop full paper and Shared Task system description <a href="https://www.softconf.com/coling2012/ML4HMT12/">paper submission</a> deadline</li>
 
         <li><strong>October 31st</strong> Workshop paper accept/reject notification</li>
 
         <li><strong>November 15th</strong> Workshop and Shared Task camera ready paper due</li>
 
-        <li><strong>December 9th</strong> COLING 2012 Pre-conference workshops</li>
+        <li><strong>December 9th</strong> COLING 2012 Pre-conference workshop, 9am</li>
       </ul>
 
       <h4>Acknowledgments</h4>
