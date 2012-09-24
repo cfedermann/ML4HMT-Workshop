@@ -57,10 +57,16 @@
         <strong>Downloads</strong>
         <ol>
           <li><a href="http://t4me-wp2.dfki.de/tuningDataESEN.tar.bz2">tuning data ES&rarr;EN</a> (57.1 MB)</li>
+          <li><a href="http://t4me-wp2.dfki.de/ml4hmt-12.testDataESEN.tar.bz2">test data ES&rarr;EN</a> (6.1 MB)</li>
         </ol>
         </li>
 
-        <li><strong>(ZH-EN):</strong> A corresponding data set for ZH-EN with output translations from three systems (Phrase-based Moses, hierarchical Moses  and <a href="{{URL_PREFIX}}{% url ml4hmt.views.markup_page page_id="shared-task/zh-en/huajian"%}">Huajian RBMT</a>) will be provided.</li>
+        <li><strong>(ZH-EN):</strong> A corresponding data set for ZH-EN with output translations from three systems (Phrase-based Moses, ICT_Chiero (an implementation of a hierarchical phrase-based MT system [Mi et al., 2009] by the Chinese Academy of Sciences) and <a href="{{URL_PREFIX}}{% url ml4hmt.views.markup_page page_id="shared-task/zh-en/huajian"%}">Huajian RBMT</a>) will be provided.<br/>
+        <strong>Downloads</strong>
+        <ol>
+          <li>Data for ZH&rarr;EN is available for download from the LDC. Participants have to fill out a user agreement form and individually obtain the data packages from the LDC. More information <a href="http://computing.dcu.ie/~tokita/LDCinstruction.htm">can be found here</a>.</li>
+        </ol>
+        </li>
       </ul>
 
       <p>Participants are challenged to build an MT mechanism that improves over the baseline, where possible making effective use of the system-specific MT meta-data output. They can provide solutions based on open-source systems, or develop their own mechanisms. The development set can be used for tuning the systems during the development phase. Final submissions have to include translation output on a test set, which will be made available one week after training data release. Data will be provided to build language/reordering models, possibly re-using existing resources from MT research.</p>
