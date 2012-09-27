@@ -13,11 +13,7 @@
   <div class="row">
     <div class="span12">
       <h4>Call for Papers</h4>
-      <p>The "Second Workshop on Applying Machine Learning Techniques to Optimise the Division of Labour in Hybrid MT (ML4HMT-12)” is an effort to trigger a systematic investigation on improving state-of-the-art hybrid machine translation, making use of advanced machine-learning (ML) methodologies.</p>
-
-      <p>It follows the <a href="{{URL_PREFIX}}{% url ml4hmt.views.page page_id="2011/program" %}">ML4HMT-11</a> workshop, which took place in November 2011 in Barcelona. The first workshop also road-tested a shared task (and associated data set) and laid the basis for a broader reach in 2012.</p>
-
-      <p>ML4HMT-12 involves regular papers on hybrid MT as well as a Shared Task.</p>
+      <p>The workshop and associated shared task are an effort to trigger a systematic investigation on improving state-of-the-art hybrid machine translation, making use of advanced machine-learning (ML) methodologies. It follows the <a href="{{URL_PREFIX}}{% url ml4hmt.views.page page_id="2011/program" %}">ML4HMT-11</a> workshop which took place last November in Barcelona. The first workshop also road-tested a shared task (and associated data set) and laid the basis for a broader reach in 2012.</p>
 
       <h4>Regular Papers ML4HMT-12</h4>
       <p>We are soliciting original papers on hybrid MT, including (but not limited to):</p>
@@ -36,24 +32,22 @@
         <li>learning resources (e.g., transfer rules, transduction grammars) for probabilistic rule-based MT.</li>
       </ul>
 
-      <p>Full papers should be anonymous and follow the <a href="http://www.coling2012-iitb.org/call_for_papers.php">COLING full paper format</a>.</p>
+      <p>Full papers should be anonymous and follow the <a href="http://www.coling2012-iitb.org/call_for_papers.php">COLING full paper format</a>. To submit contributions, please follow the instructions at the Workshop management system <a href="http://www.softconf.com/coling2012/ML4HMT12/">submission website</a>. The contributions will undergo a double-blind review by members of the programme committee.</p>
 
       <h4>Shared Task ML4HMT-12</h4>
       <p>The main focus of the Shared Task is to address the question:</p>
 
       <blockquote>“Can Hybrid MT and System Combination techniques benefit from extra information (linguistically motivated, decoding, runtime, confidence scores, or other meta-data) from the systems involved?”</blockquote>
 
-      <p>Participants are invited to build hybrid MT systems and/or system combinations by using the output of several MT systems of different types, as provided by the organisers.<a name="data"></a></p>
+      <p>Participants are invited to build hybrid MT systems and/or system combinations by using the output of several MT systems of different types, as provided by the organisers. While participants are encouraged to explore machine learning techniques to explore the additional meta-data information sources, other general improvements in hybrid and combination based MT are welcome to participate in the challenge.<a name="data"></a> For systems that exploit additional meta-data information the challenge is that additional meta-data is highly heterogeneous and (individual) system specific.</p>
 
-      <p>While participants are encouraged to explore machine learning techniques to explore the additional meta-data information sources, other general improvements in hybrid and combination based MT are strongly invited to participate in the challenge.</p>
-
-      <p>For systems that exploit additional meta-data information the challenge is that additional meta-data is highly heterogeneous and (individual) system specific.</p>
+      <p>Shared task participants are invited to submit system description papers (7 pages, not anonymised) and should follow <a href="http://www.coling2012-iitb.org/call_for_papers.php">COLING short paper format</a>.</p>
 
       <h5>Data</h5>
       <p>The ML4HMT-12 Shared Task involves (ES-EN) and (ZH-EN) data sets, in each case translating into EN.</p>
 
       <ul>
-        <li><strong>(ES-EN):</strong> Participants are given a development bilingual set aligned at a sentence level. Each "bilingual sentence" contains: 1) the source sentence, 2) the target (reference) sentence and 3) the corresponding multiple output translations from five systems, based on different MT approaches (<a href="{{URL_PREFIX}}{% url ml4hmt.views.markup_page page_id="shared-task/es-en/apertium"%}">Apertium, Ramirez-Sanchez, 2006</a>; <a href="{{URL_PREFIX}}{% url ml4hmt.views.markup_page page_id="shared-task/es-en/lucy"%}">Lucy, Alonso and Thurmair, 2003</a>; <a href="{{URL_PREFIX}}{% url ml4hmt.views.markup_page page_id="shared-task/es-en/moses"%}">Moses, Koehn et. al., 2007</a>). The output has been annotated with system-internal meta-data information derived from the translation process of each of the systems.<br/>
+        <li><strong>(ES-EN):</strong> Participants are given a development bilingual set aligned at a sentence level. Each "bilingual sentence" contains: 1) the source sentence, 2) the target (reference) sentence and 3) the corresponding multiple output translations from four systems, based on different MT approaches (<a href="{{URL_PREFIX}}{% url ml4hmt.views.markup_page page_id="shared-task/es-en/apertium"%}">Apertium, Ramirez-Sanchez, 2006</a>; <a href="{{URL_PREFIX}}{% url ml4hmt.views.markup_page page_id="shared-task/es-en/lucy"%}">Lucy, Alonso and Thurmair, 2003</a>; <a href="{{URL_PREFIX}}{% url ml4hmt.views.markup_page page_id="shared-task/es-en/moses"%}">Moses, Koehn et. al., 2007</a>). The output has been annotated with system-internal meta-data information derived from the translation process of each of the systems.<br/>
         <strong>Downloads</strong>
         <ol>
           <li><a href="http://t4me-wp2.dfki.de/tuningDataESEN.tar.bz2">tuning data ES&rarr;EN</a> (57.1 MB)</li>
@@ -61,7 +55,7 @@
         </ol>
         </li>
 
-        <li><strong>(ZH-EN):</strong> A corresponding data set for ZH-EN with output translations from three systems (Phrase-based Moses, ICT_Chiero (an implementation of a hierarchical phrase-based MT system [Mi et al., 2009] by the Chinese Academy of Sciences) and <a href="{{URL_PREFIX}}{% url ml4hmt.views.markup_page page_id="shared-task/zh-en/huajian"%}">Huajian RBMT</a>) will be provided.<br/>
+        <li><strong>(ZH-EN):</strong> A corresponding data set for ZH-EN with output translations from three systems (Moses; ICT_Chiero, Mi et al., 2009; <a href="{{URL_PREFIX}}{% url ml4hmt.views.markup_page page_id="shared-task/zh-en/huajian"%}">Huajian RBMT</a>) will be provided.<br/>
         <strong>Downloads</strong>
         <ol>
           <li>Data for ZH&rarr;EN is available for download from the LDC. Participants have to fill out a user agreement form and individually obtain the data packages from the LDC. More information <a href="http://computing.dcu.ie/~tokita/LDCinstruction.htm">can be found here</a>.</li>
@@ -69,16 +63,9 @@
         </li>
       </ul>
 
-      <p>Participants are challenged to build an MT mechanism that improves over the baseline, where possible making effective use of the system-specific MT meta-data output. They can provide solutions based on open-source systems, or develop their own mechanisms. The development set can be used for tuning the systems during the development phase. Final submissions have to include translation output on a test set, which will be made available one week after training data release. Data will be provided to build language/reordering models, possibly re-using existing resources from MT research.</p>
+      <p>Participants are challenged to build an MT mechanism where possible making effective use of the system-specific MT meta-data output. They can provide solutions based on open-source systems, or develop their own mechanisms. The development set can be used for tuning the systems during the development phase. Final submissions have to include translation output on a test set, which will be made available one week after training data release. Data will be provided to build language/reordering models, possibly re-using existing resources from MT research.</p>
 
-      <p>Participants can also make use of additional (linguistic analysis, confidence estimation etc.) tools, if their systems require so, but they have to explicitly declare this upon submission, so that they are judged as "unconstrained" systems. This will allow for a better comparison between participating systems.</p>
-
-      <h5>Evaluation</h5>
-      <p>System output will be judged via peer-based human evaluation as well as automatic evaluation. During the evaluation phase, participants will be requested to rank system outputs of other participants through a web-based interface (Appraise; Federmann, 2010). Automatic metrics include BLEU (Papineni et.al., 2002), TER (Snover et.al., 2006) and METEOR  (Lavie, 2005).</p>
-
-      <p>Shared task participants will be invited to submit system description papers (7 pages, not blind and should follow <a href="http://www.coling2012-iitb.org/call_for_papers.php">COLING format</a>.</p>
-
-      <p>The ML4HMT workshop is supported by the META-NET <a href="http://t4me.dfki.de/">T4ME project</a>, funded by the DG INFSO of the European Commission through the Seventh Framework Programme, grant agreement no.: 249119. More information is available on the <a href="http://www.meta-net.eu/">META-NET website</a>.</p>
+      <p>Participants can also make use of additional (linguistic analysis, confidence estimation, etc.) tools, if their systems require so, but they have to explicitly declare this upon submission, so that they are judged as "unconstrained" systems. This will allow for a better comparison between participating systems.</p>
 
 {% include "submission.html" %}
 
