@@ -26,6 +26,16 @@ def home(request):
     context = {'URL_PREFIX': URL_PREFIX}
     return render_to_response('home.html', context)
 
+def _page_not_found(request, template_name='404.html'):
+    """Custom HTTP 404 handler that preserves URL_PREFIX."""
+    context = {'URL_PREFIX': URL_PREFIX, 'request_path': request.path}
+    return render_to_response('404.html', context)
+
+def _server_error(request, template_name='500.html'):
+    """Custom HTTP 500 handler that preserves URL_PREFIX."""
+    context = {'URL_PREFIX': URL_PREFIX, 'request_path': request.path}
+    return render_to_response('500.html', context)
+
 def page(request, page_id):
     """Renders a page for the workshop."""
     context = {'URL_PREFIX': URL_PREFIX}

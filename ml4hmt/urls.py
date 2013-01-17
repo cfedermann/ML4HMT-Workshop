@@ -1,9 +1,12 @@
 # Title:  Django project for the ML4HMT 2012 workshop website
 # Author: Christian Federmann <cfedermann@dfki.de>
 
-from django.conf.urls.defaults import patterns, url
+from django.conf.urls.defaults import patterns, url, handler404, handler500
 from django.contrib import admin
 admin.autodiscover()
+
+handler404 = 'ml4hmt.views._page_not_found'
+handler500 = 'ml4hmt.views._server_error'
 
 urlpatterns = patterns('',
   # Basic home page describing the ML4HMT workshops and shared tasks.
