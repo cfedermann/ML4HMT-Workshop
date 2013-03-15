@@ -4,6 +4,7 @@
 from django.forms import ModelForm
 from ml4hmt.workshop.models import Participant
 
+# pylint: disable-msg=R0924
 class ParticipantForm(ModelForm):
     """Form to collect information about interested participants."""
     class Meta:
