@@ -1,5 +1,5 @@
 # Title:  Django project for the ML4HMT 2012 workshop website
-# Author: Christian Federmann <cfedermann@dfki.de>
+# Author: Christian Federmann <cfedermann@gmail.com>
 
 from os import getcwd
 
@@ -13,7 +13,7 @@ if DEBUG:
     URL_PREFIX = ''
 
 ADMINS = (
-    ('Christian Federmann', 'cfedermann@dfki.de'),
+    ('Christian Federmann', 'cfedermann@gmail.com'),
 )
 
 MANAGERS = ADMINS
