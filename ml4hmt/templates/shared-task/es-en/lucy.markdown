@@ -89,9 +89,6 @@ This package contains the following files:
      is possible to extract high quality word alignment information. The
      nodes also make available part-of-speech, e.g., `PRED`, `ADVP`, or `VST`.
 
-     There exists Python code to work with the parse tree format; we aim to
-     release this [code on GitHub](https://github.com/cfedermann/).
-
      __Note:__ You can ignore the `<mir>` tags completely as these are always
                empty.
 

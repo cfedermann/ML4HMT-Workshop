@@ -64,6 +64,3 @@ This package contains the following files:
 
      The "nodes" encode Chinese to English phrase alignments and contain
      information about part-of-speech, e.g., `@NP`, `@TIM`, or `@CS`.
-
-     There exists Python code to work with the parse tree format; we aim to
-     release this [code on GitHub](https://github.com/cfedermann/).
