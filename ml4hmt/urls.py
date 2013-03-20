@@ -2,8 +2,6 @@
 # Author: Christian Federmann <cfedermann@gmail.com>
 
 from django.conf.urls.defaults import patterns, url
-from django.contrib import admin
-admin.autodiscover()
 
 # pylint: disable-msg=W0611
 handler404 = 'ml4hmt.views._page_not_found'
