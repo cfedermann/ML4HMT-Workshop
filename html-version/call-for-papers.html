@@ -1,0 +1,218 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>Shared Task on Applying Machine Learning Techniques to Optimise the Division of Labour in Hybrid MT (ML4HMT-2012)</title>
+  <link href="http://getbootstrap.com/2.3.2/assets/css/bootstrap.css" rel="stylesheet">
+
+  <!-- cfedermann: temporarily add Bootstrap 2 colors for pre/code elements
+                   as a full migration to 2.0.4 is not possible right now. -->
+  <style>
+
+.overdue {
+  text-decoration: line-through;
+}
+
+  </style>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+<body>
+
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="/ml4hmt/">ML4HMT</a>
+          <div class="nav-collapse">
+            <ul class="nav">
+              <li><a href="/ml4hmt/">Overview</a></li>
+              <li><a href="/ml4hmt/call-for-papers.html">Call for Papers</a></li>
+              <li><a href="/ml4hmt/meta-wp2.html">About META WP2</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<div class="container">
+
+<section id="about" style="padding-top: 60px;">
+  <div class="page-header">
+    <h2>Second Workshop on Applying Machine Learning Techniques to Optimise the Division of Labour in Hybrid MT (ML4HMT-12)</h2>
+    <h3>Mumbai (India) &middot; December 9th, 2012</h3>
+    <h5>In conjunction with 24th International Conference on Computational Linguistics (COLING 2012)</h5>
+  </div>
+</section>
+
+<section id="index">
+  <div class="row">
+    <div class="span12">
+      <h4>Call for Papers</h4>
+      <p>The workshop and associated shared task are an effort to trigger a systematic investigation on improving state-of-the-art hybrid machine translation, making use of advanced machine-learning (ML) methodologies. It follows the <a href="/ml4hmt/2011/program.html">ML4HMT-11</a> workshop which took place last November in Barcelona. The first workshop also road-tested a shared task (and associated data set) and laid the basis for a broader reach in 2012.</p>
+
+      <h4>Regular Papers ML4HMT-12</h4>
+      <p>We are soliciting original papers on hybrid MT, including (but not limited to):</p>
+
+      <ul>
+        <li>use of machine learning methods in hybrid MT;</li>
+
+        <li>system combination: parallel in multi-engine MT (MEMT) or sequential in statistical post-editing (SPMT);</li>
+
+        <li>combining phrases and translation units from different types of MT;</li>
+
+        <li>syntactic pre-/re-ordering;</li>
+
+        <li>using richer linguistic information in phrase-based or in hierarchical SMT;</li>
+
+        <li>learning resources (e.g., transfer rules, transduction grammars) for probabilistic rule-based MT.</li>
+      </ul>
+
+      <p>Full papers should be anonymous and follow the COLING full paper format</a>
+
+      <h4>Shared Task ML4HMT-12</h4>
+      <p>The main focus of the Shared Task is to address the question:</p>
+
+      <blockquote>“Can Hybrid MT and System Combination techniques benefit from extra information (linguistically motivated, decoding, runtime, confidence scores, or other meta-data) from the systems involved?”</blockquote>
+
+      <p>Participants are invited to build hybrid MT systems and/or system combinations by using the output of several MT systems of different types, as provided by the organisers. While participants are encouraged to explore machine learning techniques to explore the additional meta-data information sources, other general improvements in hybrid and combination based MT are welcome to participate in the challenge.<a name="data"></a> For systems that exploit additional meta-data information the challenge is that additional meta-data is highly heterogeneous and (individual) system specific.</p>
+
+      <p>Shared task participants are invited to submit system description papers (7 pages, not anonymised) and should follow COLING short paper format.</p>
+
+      <h5>Data</h5>
+      <p>The ML4HMT-12 Shared Task involves (ES-EN) and (ZH-EN) data sets, in each case translating into EN.</p>
+
+      <ul>
+        <li><strong>(ES-EN):</strong> Participants are given a development bilingual set aligned at a sentence level. Each "bilingual sentence" contains: 1) the source sentence, 2) the target (reference) sentence and 3) the corresponding multiple output translations from four systems, based on different MT approaches (Apertium, Ramirez-Sanchez, 2006; Lucy, Alonso and Thurmair, 2003; Moses, Koehn et. al., 2007). The output has been annotated with system-internal meta-data information derived from the translation process of each of the systems.<br/>
+        <strong>Downloads</strong>
+        <ol>
+          <li><a href="https://raw.github.com/cfedermann/ML4HMT-2012/master/data/tuningDataESEN.tar.bz2">tuning data ES&rarr;EN</a> (57.1 MB)</li>
+          <li><a href="https://raw.github.com/cfedermann/ML4HMT-2012/master/data/ml4hmt-12.testDataESEN.tar.bz2">test data ES&rarr;EN</a> (6.1 MB)</li>
+        </ol>
+        </li>
+
+        <li><strong>(ZH-EN):</strong> A corresponding data set for ZH-EN with output translations from three systems (Moses; ICT_Chiero, Mi et al., 2009; Huajian RBMT) will be provided.<br/>
+        <strong>Downloads</strong>
+        <ol>
+          <li>Data for ZH&rarr;EN is available for download from the LDC. Participants have to fill out a user agreement form and individually obtain the data packages from the LDC.</li>
+        </ol>
+        </li>
+      </ul>
+
+      <p>Participants are challenged to build an MT mechanism where possible making effective use of the system-specific MT meta-data output. They can provide solutions based on open-source systems, or develop their own mechanisms. The development set can be used for tuning the systems during the development phase. Final submissions have to include translation output on a test set, which will be made available one week after training data release. Data will be provided to build language/reordering models, possibly re-using existing resources from MT research.</p>
+
+      <p>Participants can also make use of additional (linguistic analysis, confidence estimation, etc.) tools, if their systems require so, but they have to explicitly declare this upon submission, so that they are judged as "unconstrained" systems. This will allow for a better comparison between participating systems.</p>
+
+      <h4>Submission Details</h4>
+      <p>Shared task results should be submitted via email attachment. Please compress your results as <span class="label">.zip</span> or <span class="label">.gz</span> archive and send them to <code>cfedermann[at]dfki[dot]de</code>. Use <code>ML4HMT-12 Shared Task Submission</code> as mail subject. Shared task results are due by <span class="label label-warning">extended</span> <strong>October 28th</strong>.</p>
+
+      <p>System output will be judged via peer-based human evaluation as well as automatic evaluation. During the evaluation phase, participants will be requested to rank system outputs of other participants through a web-based interface (Appraise; Federmann, 2010). Automatic metrics include BLEU (Papineni et.al., 2002), TER (Snover et.al., 2006) and METEOR  (Lavie, 2005).</p>
+
+      <p>Results from the automatic evaluation of submitted shared task results will be made available to participants on <span class="label label-info">updated</span> <strong>November 12th</strong> so that they could be referred to in system description papers. As the manual evaluation will take longer, its results will be presented and published at the workshop.</p>
+
+      <p>Papers need to be written in English and can either be 1) research papers, or 2) shared task system description papers. Please indicate the type of your submission by choosing the correct "Submission Type". Note that research papers need to be properly anonymised; system description papers may include author information. Paper submission deadline for research papers is <span class="label label-warning">extended</span> <strong>October 22nd</strong> while system description papers need to be submitted on <span class="label label-info">updated</span> <strong>November 12th</strong>.</p>
+
+      <h4>Workshop Participation</h4>
+      <p>If you are interested in our workshop and intend to participate, we'd  much appreciate if you could inform us about your participation intent beforehand so that we can better plan the workshop; to do so, send an email to <code>cfedermann[at]dfki[dot]de</code>. Participation is required for at least one author of any accepted paper.</p>
+
+      <h4>Important Dates 2012</h4>
+      <ul>
+        <li class="overdue"><strong>August 15th</strong> Shared Task training data release</li>
+
+        <li class="overdue"><strong>August 23rd</strong> Shared Task test data release</li>
+
+        <li class="overdue"><strong>October 22nd</strong> Workshop research paper submission</li>
+
+        <li class="overdue"><strong>October 28th</strong> Shared Task translation results submission deadline</li>
+
+        <li class="overdue"><strong>November 7th</strong> Workshop research paper accept/reject notification</li>
+
+        <li class="overdue"><strong>November 12th</strong> Shared Task automatic evaluation results release</li>
+
+        <li class="overdue"><strong>November 12th</strong> Shared Task system description paper submission</li>
+
+        <li class="overdue"><strong>November 13th</strong> Workshop and Shared Task camera ready paper due</li>
+
+        <li class="overdue"><strong>December 9th</strong> COLING 2012 Pre-conference workshop, 9am</li>
+      </ul>
+
+      <h4>Organizers</h4>
+      <ul>
+        <li>Prof. Josef van Genabith, Dublin City University (DCU) and Centre for Next Generation Localisation (CNGL)</li>
+
+        <li>Prof. Toni Badia, Universitat Pompeu Fabra and Barcelona Media (BM)</li>
+
+        <li>Christian Federmann, German Research Center for Artificial Intelligence (DFKI), contact person: <code>cfedermann[at]dfki[dot]de</code></li>
+
+        <li>Dr. Maite Melero, Barcelona Media (BM)</li>
+
+        <li>Dr. Marta R. Costa-jussà, Barcelona Media (BM)</li>
+
+        <li>Dr. Tsuyoshi Okita, Dublin City University (DCU)</li>
+      </ul>
+
+      <h4>Program committee</h4>
+      <ul>
+        <li>Eleftherios Avramidis (German Research Center for Artificial Intelligence, Germany)</li>
+
+        <li>Prof. Sivaji Bandyopadhyay (Jadavpur University, India)</li>
+
+        <li>Dr. Rafael Banchs (Institute for Infocomm Research - I2R, Singapore)</li></li>
+
+        <li>Prof. Loïc Barrault (LIUM - University of Le Mans, France)</li>
+
+        <li>Prof. Antal van den Bosch (Centre for Language Studies, Radboud University Nijmegen, Netherlands)</li>
+
+        <li>Dr. Grzegorz Chrupala (Saarland University, Saarbrücken, Germany)</li>
+
+        <li>Prof. Jinhua Du (Xi'an University of Technology (XAUT), China)</li>
+
+        <li>Dr. Andreas Eisele (Directorate-General for Translation (DGT), Luxembourg)</li>
+
+        <li>Dr. Cristina España-Bonet (Technical University of Catalonia, TALP, Barcelona)</li>
+
+        <li>Dr. Declan Groves (Center for Next Generation Localisation, Dublin City University, Ireland)</li>
+
+        <li>Prof. Jan Hajic (Institute of Formal and Applied Linguistics, Charles University in Prague)</li>
+
+        <li>Prof. Timo Honkela (Aalto University, Finland)</li>
+
+        <li>Dr. Patrick Lambert (LIUM - University of Le Mans, France)</li>
+
+        <li>Prof. Qun Liu (Institute of Computing Technology, Chinese Academy of Sciences, China)</li>
+
+        <li>Dr. Maite Melero (Barcelona Media Innovation Center, Spain)</li>
+
+        <li>Dr. Tsuyoshi Okita (Dublin City University, Ireland)</li>
+
+        <li>Prof. Pavel Pecina (Institute of Formal and Applied Linguistics, Charles University in Prague)</li>
+
+        <li>Dr. Marta R. Costa-jussà (Barcelona Media Innovation Center, Spain)</li>
+
+        <li>Dr. Felipe Sanchez Martinez (Escuela Politecnica Superior, Universidad de Alicante, Spain)</li>
+
+        <li>Dr. Nicolas Stroppa (Google, Zurich, Switzerland)</li>
+
+        <li>Prof. Hans Uszkoreit (German Research Center for Artificial Intelligence, Germany)</li>
+
+        <li>Dr. David Vilar (German Research Center for Artificial Intelligence, Germany)</li>
+      </ul>
+
+    </div>
+  </div>
+</section>
+
+
+
+<section id="footer">
+  <hr />
+  <footer>
+    <p><a target="_blank" href="http://ec.europa.eu/"><img width="38" height="25" style="border:0px;vertical-align:bottom;" alt="European Flag" src="https://raw.github.com/cfedermann/ML4HMT-Workshop/master/ml4hmt/images/eu-logo.png"></a> <a target="_blank" href="http://cordis.europa.eu/fp7/dc/index.cfm"><img width="35" height="25" style="border:0px;vertical-align:bottom;" alt="FP7 Logo" src="https://raw.github.com/cfedermann/ML4HMT-Workshop/master/ml4hmt/images/fp7-logo.png"></a> <small>All content is &copy; 2012 by the T4ME Consortium, all rights reserved. Last update: July 27, 2012. Valid <a href="http://validator.w3.org/check/referer" title="Valid HMTL5">HMTL5</a>. Powered by <a href="http://www.djangoproject.com/">Django</a>.</small></p>
+  </footer>
+</section>
+
+</div>
+</body>
+</html>
